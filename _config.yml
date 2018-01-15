@@ -45,3 +45,11 @@ plugins:
 
 collections:
   inmuebles:
+
+defaults:
+  - scope:
+      path: ""
+      type: inmuebles
+    value:
+      layout: default
+      permalink: /inmuebles/:title
