@@ -45,6 +45,7 @@ plugins:
 
 collections:
   inmuebles:
+    output: true
 
 defaults:
   - scope:
@@ -53,3 +54,4 @@ defaults:
     values:
       layout: default
       permalink: /inmuebles/:title
+      hide_content: true
