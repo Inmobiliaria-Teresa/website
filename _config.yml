@@ -50,6 +50,6 @@ defaults:
   - scope:
       path: ""
       type: inmuebles
-    value:
+    values:
       layout: default
       permalink: /inmuebles/:title
