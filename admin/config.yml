@@ -16,3 +16,14 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "inmueble"
+    label: "Inmueble"
+    folder: "_inmuebles"
+    create: true
+    slug: "{{year}}--{{month}}--{{day}}--{{slug}}"
+    fields:
+      - {label: "Título", name: "title", widget: "string"}
+      - {label: "Descripción", name: "body", widget: "markdown"}
+      - {label: "Precio", name: "price", widget: number, type: "int", required: false}
+      - {label: "Precio anterior", name: "previous-price", widget: number, type: "int", required: false}
