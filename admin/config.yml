@@ -25,5 +25,17 @@ collections:
     fields:
       - {label: "Título", name: "title", widget: "string"}
       - {label: "Descripción", name: "body", widget: "markdown"}
+      - label: "Dirección"
+        name: "address"
+        widget: "object"
+        fields:
+          - {label: "Street Address", name: "street", widget: "string", required: false}
+          - {label: "Ciudad", name: "city", widget: "string"}
+          - {label: "Código Postal", name: "post-code", widget: "string", required: false}
       - {label: "Precio", name: "price", widget: number, type: "int", required: false}
       - {label: "Precio anterior", name: "previous-price", widget: number, type: "int", required: false}
+      - label: "Galería"
+        name: "gallery"
+        widget: "list"
+        fields:
+          - {label: "Imagen", name: "image", widget: image}
