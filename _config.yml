@@ -30,6 +30,7 @@ markdown: kramdown
 remote_theme: Inmobiliaria-Teresa/twd-jt-inmobiliaria-teresa
 plugins:
   - jekyll-feed
+  - jekyll-humanize
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -52,6 +53,6 @@ defaults:
       path: ""
       type: inmuebles
     values:
-      layout: default
+      layout: inmuebles
       permalink: /inmuebles/:title
       hide_content: true
