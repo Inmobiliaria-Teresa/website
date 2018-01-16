@@ -38,4 +38,4 @@ collections:
         name: "gallery"
         widget: "list"
         fields:
-          - {label: "Imagen", name: "image", widget: image}
+          - {widget: image}
