@@ -24,6 +24,7 @@ collections:
     slug: "{{year}}--{{month}}--{{day}}--{{slug}}"
     fields:
       - {label: "Título", name: "title", widget: "string"}
+      - {label: "Estado", name: "status", widget: "select", opstions: ["Venta", "Alquiler"]}
       - {label: "Descripción", name: "body", widget: "markdown"}
       - label: "Dirección"
         name: "address"
@@ -32,6 +33,7 @@ collections:
           - {label: "Street Address", name: "street", widget: "string", required: false}
           - {label: "Ciudad", name: "city", widget: "string"}
           - {label: "Código Postal", name: "post-code", widget: "string", required: false}
+          - {label: "Provincia", name: "region", widget: "string"}
       - {label: "Precio", name: "price", widget: number, type: "int", required: false}
       - {label: "Precio anterior", name: "previous-price", widget: number, type: "int", required: false}
       - label: "Galería"
@@ -39,3 +41,39 @@ collections:
         widget: "list"
         fields:
           - {label: "Imagen", name: "image", widget: "image"}
+      - label: "Datos básicos"
+        name: "basic-data"
+        widget: "object"
+        required: false
+        fields:
+          - {label: "Superficie construida", name: "superficie-construida", widget: "string", type: "int", min: 0}
+          - {label: "Superficia útil", name: "superficie-útil", widget: "number", type: "int", min: 0}
+          - {label: "habitaciones", name: "rooms", widget: "number", type: "int", min: 0}
+          - {label: "Baños", name: "baths", widget: number, type: "int", min: 0}
+          - {label: "Antigüedad", name: "age", widget: "string"}
+          - {label: "Conservación", name: "state", widget: "string"}
+          - {label: "Gastos de comunidad", name: "gastos", widget: "string"}
+      - label: "Muebles y acabados"
+        name: "muebles-acabados"
+        widget: "list"
+        required: false
+        fields:
+          - {label: "Item", name: "item", widget: "string"}
+      - label: "Equipamiento e instalaciones"
+        name: "equipamiento"
+        widget: "list"
+        required: false
+        fields:
+          - {label: "Item", name: "item", widget: "string"}
+      - label: "Exteriores"
+        name: "exteriores"
+        widget: "list"
+        required: false
+        fields:
+          - {label: "Item", name: "item", widget: "string"}
+      - label: "Certificado energético"
+        name: "certificado-energetico"
+        widget: "list"
+        required: false
+        fields:
+          - {label: "Item", name: "item", widget: "string"}
