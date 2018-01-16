@@ -24,7 +24,7 @@ collections:
     slug: "{{year}}--{{month}}--{{day}}--{{slug}}"
     fields:
       - {label: "Título", name: "title", widget: "string"}
-      - {label: "Estado", name: "status", widget: "select", opstions: ["Venta", "Alquiler"]}
+      - {label: "Estado", name: "status", widget: "select", options: ["Venta", "Alquiler"]}
       - {label: "Descripción", name: "body", widget: "markdown"}
       - label: "Dirección"
         name: "address"
