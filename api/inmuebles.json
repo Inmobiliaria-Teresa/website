@@ -1,0 +1,13 @@
+---
+---
+{%- capture json -%}
+[
+  {%- for item in site.inmuebles -%}
+  {
+    "title": {{ item.title | jsonify}},
+    "precio": {{ item.price }}
+  }{%- unless forloop.last -%},{%- endunless -%}
+  {%- endfor -%}
+]
+{%- endcapture -%}
+{{ json | strip }}
