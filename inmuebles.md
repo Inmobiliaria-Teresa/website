@@ -7,8 +7,8 @@ title: Inmuebles
 
 <div class="flex">
 
-{% for inmueble in site.inmuebles item=inmueble %}
-{% include inmueble-excerpt.html %}
+{% for inmueble in site.inmuebles %}
+{% include inmueble-excerpt.html item=inmueble %}
 {% endfor %}
 
 
