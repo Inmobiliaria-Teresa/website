@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Inmuebles
+head-includes:
+  - buscar.html
 ---
 
 ## {{ page.title }}
