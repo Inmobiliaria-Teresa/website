@@ -6,7 +6,7 @@
   {
     "title": {{ item.title | jsonify}},
     "status": {{ item.status | jsonify}},
-    "city": {{ item.address.city | json}},
+    "city": {{ item.address.city | jsonify}},
     "precio": {{ item.price }}
   }{%- unless forloop.last -%},{%- endunless -%}
   {%- endfor -%}
