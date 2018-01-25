@@ -1,5 +1,5 @@
 ---
-title: 'https://unpkg.com/netlify-cms@^1.0.0/dist/cms.js'
+title: Alquiler Estudiantes
 status: Alquiler
 address:
   city: San Sebastián
