@@ -5,8 +5,11 @@ title: Inmuebles
 
 ## {{ page.title }}
 
-<ul>
-{% for inmueble in site.inmuebles %}
-<li><a href="{{ inmueble.url | absolute_url }}">{{ inmueble.title }}</a> {{ inmueble.address.city }} {{ inmueble.price | intcomma: '.' }}€</li>
+<div class="flex">
+
+{% for inmueble in site.inmuebles item=inmueble %}
+{% include inmueble-excerpt.html %}
 {% endfor %}
-<ul>
+
+
+</div>
