@@ -7,7 +7,7 @@ head-includes:
 
 ## {{ page.title }}
 
-<div class="flex">
+<div id="listado-inmuebles" class="flex">
 
 {% for inmueble in site.inmuebles %}
 {% include inmueble-excerpt.html item=inmueble %}
