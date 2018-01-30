@@ -25,6 +25,7 @@ collections:
     fields:
       - {label: "Título", name: "title", widget: "string"}
       - {label: "Estado", name: "status", widget: "select", options: ["Venta", "Alquiler"]}
+      - {label: "Operación", name: "operacion", widget: "relation", collection: "operaciones", searchFields: ["operacion"], valueField: "operacion"}
       - {label: "Descripción", name: "body", widget: "markdown"}
       - label: "Dirección"
         name: "address"
