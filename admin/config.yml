@@ -77,3 +77,10 @@ collections:
         required: false
         fields:
           - {label: "Item", name: "item", widget: "string"}
+
+  - name: "data"
+    label: "Data"
+    files:
+      - name: "operaciones"
+        label: "Operaciones"
+        file: "_data/operaciones.yml"
