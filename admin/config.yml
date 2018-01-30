@@ -25,7 +25,6 @@ collections:
     fields:
       - {label: "Título", name: "title", widget: "string"}
       - {label: "Estado", name: "status", widget: "select", options: ["Venta", "Alquiler"]}
-      - {label: "Operación", name: "operacion", widget: "relation", collection: "operaciones", searchFields: ["nombre"], valueField: "nombre"}
       - {label: "Descripción", name: "body", widget: "markdown"}
       - label: "Dirección"
         name: "address"
@@ -78,16 +77,3 @@ collections:
         required: false
         fields:
           - {label: "Item", name: "item", widget: "string"}
-
-  - name: "data"
-    label: "Data"
-    files:
-      - name: "operaciones"
-        label: "Operaciones"
-        file: "_data/operaciones.yml"
-        fields:
-          - label: "Operación"
-            name: "operacion"
-            widget: "list"
-            fields:
-              - {label: "Nombre", name: "nombre", widget: "string"}
