@@ -85,3 +85,6 @@ collections:
         label: "Operaciones"
         file: "_data/operaciones.yml"
         widget: "list"
+        field:
+          name: "operacion"
+          widget: "string"
